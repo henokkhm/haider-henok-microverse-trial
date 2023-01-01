@@ -16,17 +16,17 @@
       ducimus eveniet inventore!
     </p>
     <form action="" id="survey-form">
-      <label id="name-lable" for="name"
+      <label id="name-label" for="name"
         >NAME<input type="text" id="name" required placeholder="Name"
       /></label>
-      <label id="email-lable" for="email"
+      <label id="email-label" for="email"
         >Email<input
           type="email"
           id="email"
           required
           placeholder="example@company.com"
       /></label>
-      <label id="number-lable" for="number"
+      <label id="number-label" for="number"
         >NUMBER<input
           id="number"
           type="number"
@@ -35,16 +35,22 @@
           max="36"
           required
       /></label>
+      <label for="dropdown">Select and option
+        <select name="Country" id="dropdown">
+          <option value="England">ENGLAND</option>
+          <option value="USA">USA</option>
+        </select>
+      </label>
       <fieldset>
         <legend>What is your favorite color?</legend>
         <label for="blue">
-          <input type="radio" name="favoriteColor" id="blue" />Blue</label
+          <input type="radio" name="favoriteColor" id="blue" value="blue"/>Blue</label
         >
         <label for="green">
-          <input type="radio" name="favoriteColor" id="green" />Green</label
+          <input type="radio" name="favoriteColor" id="green" value="green"/>Green</label
         >
         <label for="red">
-          <input type="radio" name="favoriteColor" id="red" />Red</label
+          <input type="radio" name="favoriteColor" id="red" value="red"/>Red</label
         >
       </fieldset>
 
@@ -63,6 +69,8 @@
           ><input type="checkbox" value="pizza" id="pizza" />Pizza</label
         >
       </fieldset>
+      <label for="comments">Any Comments</label><textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <button id="submit" type="submit">SUBMIT</button>
     </form>
     <!--
 

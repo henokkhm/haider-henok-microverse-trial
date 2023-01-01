@@ -16,17 +16,25 @@
       ducimus eveniet inventore!
     </p>
     <form action="" id="survey-form">
-      <label for="name"
+      <label id="name-lable" for="name"
         >NAME<input type="text" id="name" required placeholder="Name"
       /></label>
-      <label for="email"
+      <label id="email-lable" for="email"
         >Email<input
           type="email"
           id="email"
           required
           placeholder="example@company.com"
       /></label>
-      <label for="number">NUMBER<input id="number" type="number" placeholder="Number" required></label>
+      <label id="number-lable" for="number"
+        >NUMBER<input
+          id="number"
+          type="number"
+          placeholder="Number"
+          min="18"
+          max="36"
+          required
+      /></label>
     </form>
     <!--
 

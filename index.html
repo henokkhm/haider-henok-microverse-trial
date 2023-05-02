@@ -8,7 +8,96 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello world!</h1>
+    <div class="container">
+      <div class="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+          natus qui voluptatibus recusandae similique sunt molestias a
+          architecto necessitatibus. Nemo porro dolores magni at fugiat dolore
+          doloremque ducimus eveniet inventore!
+        </p>
+      </div>
+      <form action="" id="survey-form">
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" required placeholder="Name" />
+        </div>
+
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="example@company.com"
+          />
+        </div>
+
+        <div>
+          <label id="number-label" for="number">Number</label>
+          <input
+            id="number"
+            type="number"
+            placeholder="Number"
+            min="18"
+            max="36"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="dropdown">Please select your country</label>
+          <select name="Country" id="dropdown">
+            <option value="England">ENGLAND</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>What is your favorite color?</legend>
+
+          <input type="radio" name="favoriteColor" id="blue" value="blue" />
+          <label for="blue">Blue</label>
+
+          <input type="radio" name="favoriteColor" id="green" value="green" />
+          <label for="green">Green</label>
+
+          <input type="radio" name="favoriteColor" id="red" value="red" />
+          <label for="red">Red</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What foods would you like to order?</legend>
+          <label for="burger"
+            ><input type="checkbox" value="burger" id="burger" />Burger</label
+          >
+          <label for="chicken"
+            ><input
+              type="checkbox"
+              value="chicken"
+              id="chicken"
+            />Chicken</label
+          >
+          <label for="pasta"
+            ><input type="checkbox" value="pasta" id="burger" />Pasta</label
+          >
+          <label for="pizza"
+            ><input type="checkbox" value="pizza" id="pizza" />Pizza</label
+          >
+        </fieldset>
+        <div>
+          <label for="comments">Any Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
     <!--
 
     Hello Camper!
